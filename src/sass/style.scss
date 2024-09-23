@@ -1,0 +1,29 @@
+@import "base/reset";
+@import "base/variables";
+
+body {
+    font-family: "Formular", sans-serif;
+    font-weight: 400;
+    color: $main-dark;
+}
+
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/main";
+@import "blocks/hystmodal";
+@import "blocks/banner";
+@import "blocks/swiper";
+@import "blocks/residence";
+@import "blocks/info";
+@import "blocks/footer";
+@import "blocks/promo";
+@import "blocks/table";
+@import "blocks/tags";
+@import "blocks/tour";
+@import "blocks/rules";
+@import "blocks/event";
+@import "blocks/bear-hall";
+@import "blocks/couch";
+@import "blocks/time-period";
+

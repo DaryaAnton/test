@@ -1,0 +1,106 @@
+.couch {
+    background-color: $main-dark;
+    padding: 0 24px 10px 24px;
+    &__title,
+    &__name {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 500;
+        color: $main-light;
+    }
+    &__cover {
+        margin-top: 15px;
+    }
+    &__item {
+        margin-bottom: 15px;
+    }
+    &__card {
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 15px;
+        transition: all .5s ease;
+        display: flex;
+        align-items: center;
+        max-width: 320px;
+        height: 60px;
+        padding: 0 15px 0 0;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+    }
+}
+.active {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+@media screen and (min-width: 550px) {
+    .couch {
+        &__cover {
+            display: flex;
+        }
+        &__item {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: 750px) {
+    .couch {
+        padding: 0 60px 24px 60px;
+        &__title,
+        &__name {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__card {
+            height: 80px;
+            & img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 960px) {
+    .couch {
+        &__card {
+            height: 100px;
+            & img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .couch {
+        padding: 0 80px 30px 80px;
+        &__title,
+        &__name {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__cover {
+            flex-direction: column;
+        }
+        &__item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        &__card {
+            margin-bottom: 0;
+            margin-right: 20px;
+            width: 400px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

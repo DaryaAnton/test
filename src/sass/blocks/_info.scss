@@ -1,0 +1,172 @@
+.info {
+    &__timetable {
+        padding: 30px 24px 20px 24px;
+        background-color: $main-dark;
+        &-cover {
+            display: flex;
+            align-items: center;
+        }
+        &-inner {
+            width: 37%;
+            margin-bottom: 10px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: $main-light;
+            margin-bottom: 10px;
+        }
+        &-department {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            color: $main-light;
+            margin-bottom: 2px;
+        }
+        &-date,
+        &-time {
+            font-size: 12px;
+            line-height: 16px;
+            color: $main-light;
+        }
+    }
+    &__path {
+        padding: 30px 24px;
+        &-title {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &-text {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        & hr {
+            color: $main-dark;
+        }
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .info {
+        &__timetable {
+            padding: 60px;
+            background-color: $main-light;
+            &_dark {
+                background-color: $main-dark;
+            }
+            &-title {
+                font-size: 48px;
+                line-height: 54px;
+                margin-bottom: 20px;
+                color: $main-dark;
+                &_dark {
+                    color: $main-light;
+                }
+            }
+            &-department {
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-dark;
+                margin-bottom: 4px;
+                &_dark {
+                    color: $main-light;
+                }
+            }
+            &-date,
+            &-time {
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-dark;
+                &_dark {
+                    color: $main-light;
+                }
+            }
+        }
+        &__path {
+            padding: 60px;
+            background-color: $main-dark;
+            &_white {
+                background-color: $main-light;
+            }
+            &-title {
+                font-size: 48px;
+                line-height: 54px;
+                color: $main-light;
+                &_white {
+                    color: $main-dark;
+                }
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 22px;
+                color: $main-light;
+                &_white {
+                    color: $main-dark;
+                }
+            }
+            & hr {
+                color: $main-light;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1466px) {
+    .info {
+        display: flex;
+        flex-direction: row-reverse;
+        &__timetable {
+            padding: 80px;
+            width: 50%;
+            background-color: $main-dark;
+            &-title {
+                font-size: 72px;
+                line-height: 80px;
+                color: $main-light;
+            }
+            &-department {
+                font-size: 18px;
+                line-height: 24px;
+                color: $main-light;
+                margin-bottom: 4px;
+            }
+            &-date,
+            &-time {
+                font-size: 18px;
+                line-height: 24px;
+                color: $main-light;
+            }
+        }
+        &__path {
+            padding: 80px;
+            width: 50%;
+            background-color: $main-light;
+            &_white {
+                background-color: $main-dark;
+            }
+            &-title {
+                font-size: 72px;
+                line-height: 80px;
+                color: $main-dark;
+                &_white {
+                    color: $main-light;
+                }
+            }
+            &-text {
+                font-size: 18px;
+                line-height: 24px;
+                color: $main-dark;
+                margin-top: 30px;
+                &_white {
+                    color: $main-light;
+                }
+            }
+            & hr {
+                color: $main-dark;
+            }
+        }
+    }
+}

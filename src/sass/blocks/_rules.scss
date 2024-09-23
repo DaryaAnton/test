@@ -1,0 +1,107 @@
+.rules {
+    padding: 32px 24px 0 24px;
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    &__item {
+        margin-bottom: 32px;
+        & a {
+            display: flex;
+            font-family: "Formular", sans-serif;
+            font-weight: 400;
+            color: $main-dark;
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 15px;
+            & img {
+                width: 12px;
+                height: 16px;
+                margin-right: 8px;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        & ul {
+            & li {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 579px) {
+    .rules {
+        &__title {
+            width: 55%;
+        }
+    }
+}
+@media screen and (min-width: 750px) {
+    .rules {
+        padding: 60px 60px 20px 60px;
+        &__title {
+            font-size: 48px;
+            line-height: 54px;
+            margin-bottom: 32px;
+            width: 91%;
+        }
+        &__item {
+            margin-bottom: 40px;
+            & a {
+                font-size: 16px;
+                line-height: 28px;
+                & img {
+                    width: 18px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+            }
+            & ul {
+                width: 85%;
+                & li {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px) {
+    .rules {
+        & ul {
+            width: 70%;
+        }
+    }
+}
+@media screen and (min-width: 1285px) {
+    .rules {
+        &__title {
+            width: 50%;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .rules {
+        padding: 80px 80px 40px 80px;
+        &__title {
+            font-size: 72px;
+            line-height: 80px;
+            margin-bottom: 40px;
+            width: 70%;
+        }
+        &__item {
+            & ul {
+                & li {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
