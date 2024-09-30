@@ -8,7 +8,7 @@ const outDir = resolve(__dirname, 'dist');
 
 const pages = {
   index: resolve(root, 'index.html'),
-  catalog: resolve(root, 'catalog.html'),
+  about: resolve(root, 'about/about.html'),
 };
 
 export default defineConfig({
